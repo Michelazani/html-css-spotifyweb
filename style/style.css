@@ -50,7 +50,8 @@ header img{
 }
 
 header span,
-header p{
+header p,
+section.taskbar span{
     color: rgb(126, 126, 126);
     width: 100%;
 }
@@ -58,6 +59,7 @@ header p{
 .white,
 .uppercase{
     color: white;
+    font-weight: bold;
 }
 
 .uppercase{
@@ -134,6 +136,13 @@ section.taskbar{
     bottom: 0;
 }
 
+section.taskbar img{
+    width: 10%;
+}
+
+
+
+
 
 
 
@@ -172,8 +181,12 @@ section.taskbar{
         
     }
     
+    .border-bottom{
+        border-bottom: 1px solid rgb(126, 126, 126);
+        margin: 0.5rem;
+    }
    
-    
+     
     
     
 }
