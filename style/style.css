@@ -13,11 +13,21 @@
 
 
 /* HEADER */
+body>header{
+    width: 10%;
+    height: 500px;
+    border: 1px solid purple;
+    position: fixed;
+}
 
 
     /* CALL TO ACTION */
 
-
+div.call-to-action{
+    width: 100%;
+    border: 1px solid purple;
+    height: 100px;
+}
 
 
 
@@ -44,7 +54,10 @@
 
 /* TASKBAR */
 
-
+.taskbar{
+    height: 100px;
+    border: 1px solid purple;
+}
 
 
 
