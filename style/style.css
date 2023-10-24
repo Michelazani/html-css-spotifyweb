@@ -49,6 +49,21 @@ header img{
     display: none;
 }
 
+header span,
+header p{
+    color: rgb(126, 126, 126);
+    width: 100%;
+}
+
+.white,
+.uppercase{
+    color: white;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    margin: 1rem;
+}
 
     /* CALL TO ACTION */
 
@@ -128,32 +143,38 @@ section.taskbar{
 ****************************************************************/
 
 @media screen and (min-width: 576px) { 
+
+    body>header{
+        width: 25%;
+    }
+
+    main{
+        width: 75vw;
+    }
+
+
     .display-none-media{
         display: none;
     }
 
     .display-none{
         display: inline-block;
-        width: 80px;
+        width: 100%;
         justify-content: center;
         align-items: center;
         display: flex;
         padding: 0.25rem;
     }
-    
-    header span{
-        color: rgb(126, 126, 126);
-    }
-    
-    .white,
-    .uppercase{
-        color: white;
-    }
 
-    .uppercase{
-        text-transform: uppercase;
-        margin: 1rem;
+    .display-inline-media{
+        display: flex;
+        flex-direction: column;
+        
     }
+    
+   
+    
+    
     
 }
 
