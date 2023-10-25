@@ -30,11 +30,10 @@
 
 
 /* HEADER */
-body>header{
+body div.wrapper header{
     width: 60px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     background-color: black;
-    /* position: fixed; */
 }
 
 header img{
@@ -49,6 +48,10 @@ header img{
     display: none;
 }
 
+.background{
+    background-color: gray;
+    border-radius: 50px;
+}
 
 
 /* MAIN */
@@ -79,10 +82,8 @@ section.call-to-action button.black-button{
 
 main{
     width: calc(100vw - 60px);
-    height: calc(100vh - 100px) ;
+    height: calc(100vh - 90px) ;
     overflow: auto;
-    /* position: fixed;
-    right: 0; */
     background-color: rgb(20, 25, 34);
 
 }
@@ -113,7 +114,7 @@ main{
 
 footer.taskbar{
     width: 100%;
-    height: 100px;
+    height: 90px;
     background-color:rgb(40, 40, 40);
     position: fixed;
     bottom: 0;
@@ -136,7 +137,7 @@ footer.taskbar img{
 
 @media screen and (min-width: 576px) { 
 
-    body>header{
+    body div.wrapper header{
         width: 150px;
     }
 
