@@ -31,10 +31,10 @@
 
 /* HEADER */
 body>header{
-    width: 15%;
-    height: calc(100% - 100px);
-    position: fixed;
+    width: 60px;
+    height: calc(100vh - 100px);
     background-color: black;
+    position: fixed;
 }
 
 header img{
@@ -49,27 +49,14 @@ header img{
     display: none;
 }
 
-header span,
-header p,
-section.taskbar span{
-    color: rgb(126, 126, 126);
-    width: 100%;
-}
 
-.white,
-.uppercase{
-    color: white;
-    font-weight: bold;
-}
 
-.uppercase{
-    text-transform: uppercase;
-    margin: 1rem;
-}
+/* MAIN */
 
-    /* CALL TO ACTION */
 
-section.call-to-action{
+ /* CALL TO ACTION */
+
+ section.call-to-action{
     width: 100%;
     background-color:rgb(8, 11, 18);
     height: 70px;
@@ -90,13 +77,14 @@ section.call-to-action button.black-button{
 }
 
 
-
-
-/* MAIN */
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 main{
-    width: 85vw;
-    height: 100vh ;
+    width: calc(100% - 60px);
+    height: calc(100vh - 100px) ;
     overflow: auto;
     position: fixed;
     right: 0;
@@ -128,7 +116,7 @@ main{
 
 /* TASKBAR */
 
-section.taskbar{
+footer.taskbar{
     width: 100%;
     height: 100px;
     background-color:rgb(40, 40, 40);
@@ -136,8 +124,8 @@ section.taskbar{
     bottom: 0;
 }
 
-section.taskbar img{
-    width: 10%;
+footer.taskbar img{
+    width: 50px;
 }
 
 
@@ -154,12 +142,31 @@ section.taskbar img{
 @media screen and (min-width: 576px) { 
 
     body>header{
-        width: 25%;
+        width: 150px;
+    }
+
+    header span,
+    header p,
+    section.taskbar span{
+    color: rgb(126, 126, 126);
+    width: 100%;
+}
+
+    .white,
+    .uppercase{
+        color: white;
+        font-weight: bold;
+    }
+
+    .uppercase{
+        text-transform: uppercase;
+        margin: 1rem;
     }
 
     main{
-        width: 75vw;
+            width: calc(100% - 150px);
     }
+
 
 
     .display-none-media{
