@@ -119,7 +119,7 @@ main{
 /* TASKBAR */
 
 footer.taskbar{
-    width: 100%;
+    max-width: 575px;
     height: 90px;
     background-color:rgb(40, 40, 40);
     position: fixed;
@@ -132,8 +132,7 @@ footer.taskbar img{
 
 
 .border-footer{
-    border: 4px solid transparent;
-    width: 250px;
+    width: 100%;
 }
 
 .white-footer{
@@ -151,9 +150,40 @@ footer.taskbar img{
     width: calc(100vw / 3);
 }
 
-footer div.flex-column i{
-    margin: 0 1rem;
+/* footer div.width-3 i{
+    padding: 0 0.5rem;
+} */
+
+footer.taskbar div.flex-start img{
+    padding-left: 0.5rem;
 }
+
+.fa-heart,
+.fa-folder
+{
+    padding-left: 3.5rem;
+}
+
+footer div.border-footer span:first-child{
+    padding-right: 1rem;
+}
+
+footer div.border-footer span:last-child{
+    padding-left: 1rem;
+}
+
+.fa-shuffle,
+.fa-backward-step,
+.fa-circle-play,
+.fa-forward-step,
+.fa-rotate-right{
+    font-size: 25px;
+    padding: 0.5rem 0.5rem;
+
+}
+
+
+
 /***************************************************************
     MEDIA Sm > min-width: 576px 
 ****************************************************************/
@@ -210,6 +240,10 @@ footer div.flex-column i{
     div.wrapper header *{
         margin: 0.3rem 0;
     }
+
+    footer.taskbar{
+        max-width: 768px; 
+    }
     
 }
 
@@ -219,7 +253,12 @@ footer div.flex-column i{
 ****************************************************************/
 
 @media screen and (min-width: 768px) { 
-    
+
+
+
+    footer.taskbar{
+        max-width: 992px; 
+    }
 }
 
 
@@ -231,5 +270,9 @@ footer div.flex-column i{
 
 @media screen and (min-width: 992px) { 
     
+
+    footer.taskbar{
+        max-width: 1500px; 
+    }
     
 }
