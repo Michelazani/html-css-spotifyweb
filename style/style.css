@@ -91,12 +91,36 @@ main{
     height: calc(100vh - 90px) ;
     overflow: auto;
     background-color: rgb(20, 25, 34);
-
 }
 
+
+    header span,
+    header p,
+    section.taskbar span,
+    ul{
+    color: rgb(126, 126, 126);
+    width: 100%;
+    }
     /* CENTRAL HEADER */
 
+    main div.central-header ul,
+    .uppercase{
+        text-transform: uppercase;
+        margin: 1rem;
+    }
 
+    ul{
+        list-style: none;
+    }
+
+    .central-header{
+        width: 90%;
+        font-size: small;  
+    }
+
+    main div.central-header ul li{
+        margin-right: 1rem;
+    }
 
     /* 1 SECTION INFO*/
 
@@ -179,7 +203,12 @@ footer div.border-footer span:last-child{
 .fa-rotate-right{
     font-size: 25px;
     padding: 0.5rem 0.5rem;
+}
 
+.fa-list,
+.fa-display,
+.fa-volume-high{
+    padding-left: 0.5rem;
 }
 
 
@@ -191,21 +220,15 @@ footer div.border-footer span:last-child{
 @media screen and (min-width: 576px) { 
 
     body div.wrapper header{
+        background-color: rebeccapurple;
+    }
+
+
+
+    body div.wrapper header{
         width: 150px;
     }
 
-    header span,
-    header p,
-    section.taskbar span,
-    ul{
-    color: rgb(126, 126, 126);
-    width: 100%;
-    }
-
-    .uppercase{
-        text-transform: uppercase;
-        margin: 1rem;
-    }
 
     main{
             width: calc(100vw - 150px);
@@ -254,7 +277,9 @@ footer div.border-footer span:last-child{
 
 @media screen and (min-width: 768px) { 
 
-
+    body div.wrapper header{
+        background-color: violet;
+    }
 
     footer.taskbar{
         max-width: 992px; 
@@ -270,6 +295,9 @@ footer div.border-footer span:last-child{
 
 @media screen and (min-width: 992px) { 
     
+    body div.wrapper header{
+        background-color: aqua;
+    }
 
     footer.taskbar{
         max-width: 1500px; 
