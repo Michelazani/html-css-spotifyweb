@@ -34,7 +34,7 @@ body>header{
     width: 60px;
     height: calc(100vh - 100px);
     background-color: black;
-    position: fixed;
+    /* position: fixed; */
 }
 
 header img{
@@ -72,27 +72,22 @@ section.call-to-action button.black-button{
 }
 
 
-.flex-start{
-    justify-content: flex-start;
-}
-
-
 .wrapper{
     display: flex;
     flex-wrap: wrap;
 }
 
 main{
-    width: calc(100% - 60px);
+    width: calc(100vw - 60px);
     height: calc(100vh - 100px) ;
     overflow: auto;
-    position: fixed;
-    right: 0;
+    /* position: fixed;
+    right: 0; */
     background-color: rgb(20, 25, 34);
 
 }
 
-    /* HEADER */
+    /* CENTRAL HEADER */
 
 
 
@@ -147,7 +142,8 @@ footer.taskbar img{
 
     header span,
     header p,
-    section.taskbar span{
+    section.taskbar span,
+    ul{
     color: rgb(126, 126, 126);
     width: 100%;
 }
@@ -164,7 +160,7 @@ footer.taskbar img{
     }
 
     main{
-            width: calc(100% - 150px);
+            width: calc(100vw - 150px);
     }
 
 
