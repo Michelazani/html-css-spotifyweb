@@ -131,6 +131,21 @@ footer.taskbar img{
 }
 
 
+.border-footer{
+    border: 4px solid transparent;
+    width: 300px;
+}
+
+.white-footer{
+    border: 4px solid white;
+    width: 20%;
+}
+
+.grey-footer{
+    border: 4px solid rgb(90, 90, 90);
+    width: 80%;
+}
+
 
 
 
