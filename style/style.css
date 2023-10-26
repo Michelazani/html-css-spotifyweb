@@ -57,7 +57,9 @@ header img{
 .white,
 .uppercase,
 section.recently-played h3,
-section.recently-played h4{
+section.creato-per h3,
+section.recently-played h4,
+section.creato-per h4{
     color: white;
 }
 
@@ -135,29 +137,33 @@ main{
 
 
     /* 1 SECTION RECENTLY PLYED */
-    section.recently-played .s-container{
+    .s-container{
         width: 90%;
         align-items: self-start;
     }
 
-    section.recently-played img{
+    section.recently-played img,
+    section.creato-per img{
         width: 100%;
         padding: 0.5rem;
     }
 
-    .column-width{
+    .column-width,
+    .creato-per-column-width{
         width: calc(100% / 2);
         align-items: stretch;
     }
 
     section.recently-played h4,
-    section.recently-played p{
+    section.recently-played p,
+    section.creato-per h4,
+    section.creato-per p{
         text-align: center;
     }
 
     /* 2 SECTION CREATO*/
 
-
+    
 
 
     /* 3 SECTION ARTISTI */
@@ -199,9 +205,6 @@ footer.taskbar img{
     width: calc(100vw / 3);
 }
 
-/* footer div.width-3 i{
-    padding: 0 0.5rem;
-} */
 
 footer.taskbar div.flex-start img{
     padding-left: 0.5rem;
@@ -318,10 +321,12 @@ footer div.border-footer span:last-child{
         width: calc(100% / 4);
     }
 
-    section.recently-played div.wrapper{
+    section.recently-played div.wrapper,
+    section.creato-per div.wrapper{
         justify-content: flex-start;
-
     }
+
+
 
     footer.taskbar{
         width: 100%; 
