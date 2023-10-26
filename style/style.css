@@ -59,7 +59,8 @@ header img{
 section.recently-played h3,
 section.creato-per h3,
 section.recently-played h4,
-section.creato-per h4{
+section.creato-per h4,
+section.artisti-popolari h3{
     color: white;
 }
 
@@ -101,9 +102,16 @@ main{
     header p,
     section.taskbar span,
     ul,
-    section.recently-played p 
-    {
+    section.recently-played p,
+    section.creato-per span,
+    section.artisti-popolari span{
     color: rgb(126, 126, 126);
+    }
+
+    section.recently-played p,
+    section.creato-per span,
+    section.artisti-popolari span{
+        font-size: 0.7rem;
     }
     /* CENTRAL HEADER */
 
@@ -137,13 +145,20 @@ main{
 
 
     /* 1 SECTION RECENTLY PLYED */
+
+    section.recently-played,
+    section.creato-per,
+    section.artisti-popolari{
+        padding: 1rem;
+    }
     .s-container{
         width: 90%;
         align-items: self-start;
     }
 
     section.recently-played img,
-    section.creato-per img{
+    section.creato-per img,
+    section.artisti-popolari img{
         width: 100%;
         padding: 0.5rem;
     }
@@ -157,31 +172,32 @@ main{
     section.recently-played h4,
     section.recently-played p,
     section.creato-per h4,
-    section.creato-per p{
+    section.creato-per p,
+    section.artisti-popolari h4,
+    section.artisti-popolari p{
         text-align: center;
     }
 
     /* 2 SECTION CREATO*/
 
-    section.creato-per div>h3{
-        /* position: relative;
-        right: 110px; */
-        float: right;
+    section.recently-played div>h3,
+    section.creato-per>span,
+    section.creato-per>h3,
+    section.artisti-popolari>h3,
+    section.artisti-popolari>span {
+        padding-left: 0.5rem;
+
     }
 
-    section.creato-per div>span{
-        /* position: relative;
-        right: 22px */
-    }
-
-    section.recently-played div>h3 {
-        /* position: relative;
-        right: 128px; */
+    main p{
+        padding: 0.5rem 0;
     }
 
     /* 3 SECTION ARTISTI */
 
-
+    section.artisti-popolari img{
+        border-radius: 50%;
+    }
 
 
 /* TASKBAR */
@@ -267,12 +283,18 @@ footer div.border-footer span:last-child{
 
 
     body div.wrapper header{
-        width: 150px;
+        width: 180px;
+    }
+
+    header div.display-none,
+    body div.wrapper header{
+        align-items: flex-start;
+
     }
 
 
     main{
-            width: calc(100vw - 150px);
+            width: calc(100vw - 180px);
     }
 
     .flex-start{
@@ -336,7 +358,8 @@ footer div.border-footer span:last-child{
     }
 
     section.recently-played div.wrapper,
-    section.creato-per div.wrapper{
+    section.creato-per div.wrapper,
+    section.artisti-popolari div.wrapper{
         justify-content: flex-start;
     }
 
