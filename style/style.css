@@ -45,7 +45,8 @@ header img{
     padding: 0.25rem;
 }
 
-.display-none{
+.display-none,
+.none{
     display: none;
 }
 
@@ -346,9 +347,13 @@ footer div.border-footer span:last-child{
 
     div.wrapper header span:hover,
     div.wrapper header li:hover,
-    div.central-header li:hover{
+    div.central-header li:hover,
+    .fa-heart:hover,
+    .fa-folder:hover{
         color: white;
     }
+/* CAMBIARE COLORE A ICONE !!!!!!!!!!!!!!!!!!!!!!!!!! */
+   
 
     section.call-to-action button:hover{
         width: 215px;
@@ -358,6 +363,17 @@ footer div.border-footer span:last-child{
 
     footer.taskbar div.flex p:hover:not(.white){
         text-decoration: underline;
+    }
+
+    section.recently-played div.s-container img:hover{
+        top: 176px;
+        width: 244px;
+        height: 244px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 6rem;
+    
     }
 }
 
