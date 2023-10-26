@@ -123,6 +123,14 @@ main{
     }
 
 
+    .border-b-main{
+        border-bottom: 3px solid lime;
+        width: 50%;
+        position: relative;
+        left: 20px;
+        
+    }
+
 
     /* 1 SECTION RECENTLY PLYED */
     section.recently-played .s-container{
@@ -137,9 +145,11 @@ main{
     section.recently-played img{
         width: 80%;
     }
-    .width-2{
+    .column-width{
         width: calc(100% / 2);
     }
+
+
     /* 2 SECTION CREATO*/
 
 
@@ -277,7 +287,14 @@ footer div.border-footer span:last-child{
     footer.taskbar{
         max-width: 768px; 
     }
-    
+
+    .border-left{
+        border-left: 3px solid lime;
+    }
+ 
+    .border-transparent{
+        border-left: 3px solid transparent;
+    }
 }
 
 
@@ -289,6 +306,16 @@ footer div.border-footer span:last-child{
 
     body div.wrapper header{
         background-color: violet;
+    }
+
+
+    .column-width{
+        width: calc(100% / 4);
+    }
+
+    section.recently-played div.wrapper{
+        justify-content: flex-start;
+
     }
 
     footer.taskbar{
@@ -307,6 +334,11 @@ footer div.border-footer span:last-child{
     
     body div.wrapper header{
         background-color: aqua;
+    }
+
+    .column-width{
+        width: calc(100% / 6);
+        flex-wrap: wrap;
     }
 
     footer.taskbar{
