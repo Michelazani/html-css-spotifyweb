@@ -163,8 +163,21 @@ main{
 
     /* 2 SECTION CREATO*/
 
-    
+    section.creato-per div>h3{
+        /* position: relative;
+        right: 110px; */
+        float: right;
+    }
 
+    section.creato-per div>span{
+        /* position: relative;
+        right: 22px */
+    }
+
+    section.recently-played div>h3 {
+        /* position: relative;
+        right: 128px; */
+    }
 
     /* 3 SECTION ARTISTI */
 
@@ -317,7 +330,8 @@ footer div.border-footer span:last-child{
     }
 
 
-    .column-width{
+    .column-width, 
+    .creato-per-column-width{
         width: calc(100% / 4);
     }
 
@@ -346,7 +360,8 @@ footer div.border-footer span:last-child{
         background-color: aqua;
     }
 
-    .column-width{
+    .column-width,
+    .creato-per-column-width{
         width: calc(100% / 6);
     }
 
