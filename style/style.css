@@ -104,7 +104,8 @@ main{
     ul,
     section.recently-played p,
     section.creato-per span,
-    section.artisti-popolari span{
+    section.artisti-popolari span,
+    footer.taskbar div.flex p:not(.white){
     color: rgb(126, 126, 126);
     }
 
@@ -294,7 +295,7 @@ footer div.border-footer span:last-child{
 
 
     main{
-            width: calc(100vw - 180px);
+        width: calc(100vw - 180px);
     }
 
     .flex-start{
@@ -337,6 +338,26 @@ footer div.border-footer span:last-child{
  
     .border-transparent{
         border-left: 3px solid transparent;
+    }
+
+
+
+    /* HOVER */
+
+    div.wrapper header span:hover,
+    div.wrapper header li:hover,
+    div.central-header li:hover{
+        color: white;
+    }
+
+    section.call-to-action button:hover{
+        width: 215px;
+        text-align: center;
+        font-size: medium;
+    }
+
+    footer.taskbar div.flex p:hover:not(.white){
+        text-decoration: underline;
     }
 }
 
