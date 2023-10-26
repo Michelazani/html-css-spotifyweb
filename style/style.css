@@ -55,9 +55,10 @@ header img{
 }
 
 .white,
-.uppercase{
+.uppercase,
+section.recently-played h3,
+section.recently-played h4{
     color: white;
-    font-weight: bold;
 }
 
 /* MAIN */
@@ -97,9 +98,10 @@ main{
     header span,
     header p,
     section.taskbar span,
-    ul{
+    ul,
+    section.recently-played p 
+    {
     color: rgb(126, 126, 126);
-    width: 100%;
     }
     /* CENTRAL HEADER */
 
@@ -137,18 +139,19 @@ main{
         width: 90%;
     }
 
-    section.recently-played h3{
-        font-weight: bold;
-        color: white;
+    section.recently-played img{
+        width: 100%;
+        padding: 0.5rem;
     }
 
-    section.recently-played img{
-        width: 80%;
-    }
     .column-width{
         width: calc(100% / 2);
     }
 
+    section.recently-played h4,
+    section.recently-played p{
+        text-align: center;
+    }
 
     /* 2 SECTION CREATO*/
 
