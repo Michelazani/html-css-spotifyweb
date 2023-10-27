@@ -201,7 +201,6 @@ main{
         border-radius: 50%;
     }
 
-
 /* TASKBAR */
 
 footer.taskbar{
@@ -268,6 +267,52 @@ footer div.border-footer span:last-child{
 .fa-display,
 .fa-volume-high{
     padding-left: 0.5rem;
+}
+
+
+/* HOVER */
+
+div.wrapper header span:hover,
+div.wrapper header li:hover,
+div.central-header li:hover,
+.fa-heart:hover,
+.fa-folder:hover{
+    color: white;
+}
+/* CAMBIARE COLORE A ICONE !!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+section.call-to-action button:hover{
+    width: 215px;
+    text-align: center;
+    font-size: medium;
+}
+
+footer.taskbar div.flex p:hover:not(.white){
+    text-decoration: underline;
+}
+
+.icon{
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.icon.fa-circle-play-main style{
+    font-size: 3rem;
+    background-color: rgba(128, 128, 128, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 4rem;
+    font-size: 3rem;
+    /* display: none; */
+}
+
+div.overlay:hover i.fa-circle-play-main{
+    display: inline-block;
 }
 
 
@@ -341,41 +386,10 @@ footer div.border-footer span:last-child{
         border-left: 3px solid transparent;
     }
 
-
-
-    /* HOVER */
-
-    div.wrapper header span:hover,
-    div.wrapper header li:hover,
-    div.central-header li:hover,
-    .fa-heart:hover,
-    .fa-folder:hover{
-        color: white;
-    }
-/* CAMBIARE COLORE A ICONE !!!!!!!!!!!!!!!!!!!!!!!!!! */
    
-
-    section.call-to-action button:hover{
-        width: 215px;
-        text-align: center;
-        font-size: medium;
-    }
-
-    footer.taskbar div.flex p:hover:not(.white){
-        text-decoration: underline;
-    }
-
-    section.recently-played div.s-container img:hover{
-        top: 176px;
-        width: 244px;
-        height: 244px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        font-size: 6rem;
-    
-    }
 }
+
+
 
 
 /***************************************************************
