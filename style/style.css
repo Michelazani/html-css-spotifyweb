@@ -98,7 +98,6 @@ main{
     background-color: rgb(20, 25, 34);
 }
 
-
     header span,
     header p,
     section.taskbar span,
@@ -115,6 +114,7 @@ main{
     section.artisti-popolari span{
         font-size: 0.7rem;
     }
+
     /* CENTRAL HEADER */
 
     main div.central-header ul,
@@ -200,6 +200,7 @@ main{
     section.artisti-popolari img{
         border-radius: 50%;
     }
+
 
 /* TASKBAR */
 
@@ -297,8 +298,7 @@ footer.taskbar div.flex p:hover:not(.white){
 
 }
 
-
- .overlay>i.fa-circle-play-main{
+.overlay>i.fa-circle-play-main{
     background-color: rgba(128, 128, 128, 0.4);
     position: absolute;
     width: calc(100% - 0.5rem);
@@ -317,7 +317,7 @@ section.artisti-popolari .overlay>i.fa-circle-play-main{
 }
 
 div.cover:hover i.fa-circle-play-main{
-    display: inline-block;
+    display: flex;
 }
 
 
@@ -327,12 +327,6 @@ div.cover:hover i.fa-circle-play-main{
 ****************************************************************/
 
 @media screen and (min-width: 576px) { 
-
-    body div.wrapper header{
-        background-color: rebeccapurple;
-    }
-
-
 
     body div.wrapper header{
         width: 180px;
@@ -403,11 +397,6 @@ div.cover:hover i.fa-circle-play-main{
 
 @media screen and (min-width: 768px) { 
 
-    body div.wrapper header{
-        background-color: violet;
-    }
-
-
     .column-width, 
     .creato-per-column-width{
         width: calc(100% / 4);
@@ -418,8 +407,6 @@ div.cover:hover i.fa-circle-play-main{
     section.artisti-popolari div.wrapper{
         justify-content: flex-start;
     }
-
-
 
     footer.taskbar{
         width: 100%; 
@@ -435,10 +422,6 @@ div.cover:hover i.fa-circle-play-main{
 
 @media screen and (min-width: 992px) { 
     
-    body div.wrapper header{
-        background-color: aqua;
-    }
-
     .column-width,
     .creato-per-column-width{
         width: calc(100% / 6);
